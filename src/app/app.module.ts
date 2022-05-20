@@ -9,9 +9,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LivroCadastrarComponent } from './livro-cadastrar/livro-cadastrar.component';
+import { LivroCadastrarComponent } from './livro/livro-cadastrar/livro-cadastrar.component';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
-import { LivrosListaComponent } from './livros-lista/livros-lista.component';
+import { LivrosListaComponent } from './livro/livros-lista/livros-lista.component';
 
 @NgModule({
   declarations: [

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Livro} from './livro.model';
+import {Livro} from './livro/livro.model';
 
 @Component({
   selector: 'app-root',
