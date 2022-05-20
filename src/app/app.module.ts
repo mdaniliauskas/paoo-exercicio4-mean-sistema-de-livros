@@ -13,6 +13,8 @@ import { LivroCadastrarComponent } from './livro/livro-cadastrar/livro-cadastrar
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { LivrosListaComponent } from './livro/livros-lista/livros-lista.component';
 
+import { LivroService } from './livro/livro.service';
+
 @NgModule({
   declarations: [
     AppComponent,
