@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {Livro} from '../livro.model';
 import { LivroService } from '../livro.service';
 
@@ -9,7 +9,7 @@ import { LivroService } from '../livro.service';
 })
 export class LivrosListaComponent implements OnInit {
 
-  @Input() livros: Livro [] = [];
+  livros: Livro[];
 
   constructor(public livroService: LivroService) { }
 
@@ -35,6 +35,6 @@ export class LivrosListaComponent implements OnInit {
 // ];
 
   ngOnInit(): void {
+    this.livros = this.livroService.getLivros();
   }
-
 }
