@@ -21,6 +21,7 @@ export class LivroCadastrarComponent {
       form.value.tituto,
       form.value.autor,
       form.value.paginas
-    )
+    );
+    form.resetForm();
   }
 }

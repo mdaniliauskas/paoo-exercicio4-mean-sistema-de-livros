@@ -5,7 +5,7 @@ import { Subject } from "rxjs";
 @Injectable({ providedIn: 'root' })
 
 export class LivroService{
-  private livros:Livro[];
+  private livros:Livro[] = [];
   private listaLivrosAtualizada = new Subject<Livro[]>();
 
   getLivros(): Livro[]{
@@ -18,7 +18,7 @@ export class LivroService{
     };
     this.livros.push(livro);
     this.listaLivrosAtualizada.next([...this.livros]);
-    }
+  }
 
   getListaLivrosAtualizadaObservable() {
     return this.listaLivrosAtualizada.asObservable();
