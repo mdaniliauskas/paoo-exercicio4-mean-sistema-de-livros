@@ -1,10 +1,13 @@
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
 
 // app.use((req, res, next) => {
 //     console.log('Chegou uma requisição');
 //     next();
 // });
+
+app.use(bodyParser.json());
 
 const livros = [
     {   
@@ -28,6 +31,12 @@ app.use ((req, res, next) => {
 
     next();
 })
+
+app.post ('/api/livros', (req, res, next) => {
+    const livro = req.body
+    console.log(livro);
+    res.status(201).json({mensagem: 'Livro inserido com sucesso'});
+});
     
 
 app.use('/api/livros',(req, res, next) => {
