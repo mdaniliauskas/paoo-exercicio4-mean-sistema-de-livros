@@ -36,13 +36,22 @@ export class LivrosListaComponent implements OnInit, OnDestroy {
 //     },
 // ];
 
+  // ngOnInit(): void {
+  //   this.livros = this.livroService.getLivros();
+  //   this.livrosSubscription = this.livroService
+  //   .getListaLivrosAtualizadaObservable()
+  //   .subscribe((livros: Livro[]) => {
+  //     this.livros = livros;
+  //   })
+  // }
+  
   ngOnInit(): void {
-    this.livros = this.livroService.getLivros();
+    this.livroService.getLivros();
     this.livrosSubscription = this.livroService
     .getListaLivrosAtualizadaObservable()
     .subscribe((livros: Livro[]) => {
       this.livros = livros;
-    })
+    });
   }
 
   ngOnDestroy(): void {
