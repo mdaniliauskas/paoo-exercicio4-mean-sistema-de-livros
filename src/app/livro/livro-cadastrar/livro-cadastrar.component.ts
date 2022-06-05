@@ -18,7 +18,7 @@ export class LivroCadastrarComponent {
     }
     this.livroService.adicionarLivro(
       form.value.id,
-      form.value.tituto,
+      form.value.titulo,
       form.value.autor,
       form.value.paginas
     );

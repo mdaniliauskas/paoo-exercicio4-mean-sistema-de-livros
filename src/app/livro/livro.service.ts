@@ -28,10 +28,18 @@ export class LivroService{
 
   adicionarLivro(id: number, titulo: string, autor: string, paginas: number) {
     const livro: Livro = {
-      id, titulo, autor, paginas
+      id, 
+      titulo, 
+      autor, 
+      paginas,
     };
-    this.livros.push(livro);
-    this.listaLivrosAtualizada.next([...this.livros]);
+    this.httpClient.post<{mensagem: string}>('http://localhost:3000/api/livros', livro).subscribe(
+      (dados) => {
+        console.log(dados.mensagem);
+        this.livros.push(livro);
+        this.listaLivrosAtualizada.next([...this.livros]);
+      }
+      )
   }
 
   getListaLivrosAtualizadaObservable() {
