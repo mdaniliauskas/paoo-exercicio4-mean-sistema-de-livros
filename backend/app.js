@@ -67,7 +67,7 @@ app.get('/api/livros',(req, res, next) => {
     Livro.find().then(documents => {
       res.status(200).json({
         mensagem: "Tudo OK",
-        livros: livros
+        livros: documents
       })
     });
 });
