@@ -1,27 +1,42 @@
-# SistemaLivros
+# paoo-exercicio4-mean-sistema-de-livros ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+> **Breve descrição:**  
+> Exercício prático de desenvolvimento MEAN (MongoDB, Express, Angular, Node.js) para gerenciamento de um sistema de livros, focando em backend com TypeScript.
 
-## Development server
+## 🚀 Tecnologias
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
+- ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white)
+- ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+- ![Express.js](https://img.shields.io/badge/Express.js-404D59?style=flat-square)
 
-## Code scaffolding
+## 📚 Observação
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Exercício acadêmico para disciplina de Programação Avançada Orientada a Objetos.
 
-## Build
+## ⚙️ Como executar
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+git clone https://github.com/mdaniliauskas/paoo-exercicio4-mean-sistema-de-livros.git
+cd paoo-exercicio4-mean-sistema-de-livros
+npm install
+npm run start
+```
 
-## Running unit tests
+## 📄 Status
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+> ✅ Finalizado
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<p align="center">
+  <a href="https://github.com/mdaniliauskas">
+    <img src="https://img.shields.io/badge/Portfólio%20GitHub-100000?style=flat-square&logo=github&logoColor=white" alt="Portfólio GitHub">
+  </a>
+  <a href="mailto:marcelo.daniliauskas@gmail.com">
+    <img src="https://img.shields.io/badge/E--mail-D14836?style=flat-square&logo=gmail&logoColor=white" alt="E-mail">
+  </a>
+  <a href="https://www.linkedin.com/in/mdaniliauskas">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+</p>
